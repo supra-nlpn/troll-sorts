@@ -12,14 +12,21 @@ license = "MIT"
 authors = [
     { name = "Supra N.", email = "supra.nlpn@gmail.com" }
 ]
+dependencies = []
+keywords = ["sort", "algorithm", "joke", "troll", "humor"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
 ]
 
 [project.urls]
-Homepage = "https://github.com/example/troll-sorts"
+Homepage = "https://github.com/supra-nlpn/troll-sorts"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/troll_sorts"]
+
+[project.scripts]
+trollsorts-welcome = "troll_sorts.welcome:main"
+trollsorts = "troll_sorts.welcome:main"
